@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: "Comfortaa", cursive;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  line-height: 1;
+  font-size: 14px;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Scrollbar styling */
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: var(--lightestgrey);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #eff1f1;
+  border-radius: 0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #eff1f1;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #fff;
+}
+
+/* Toster message styling */
+.Toastify .Toastify__toast {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+.Toastify .Toastify__toast-body {
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 15px;
+}
+.Toastify__toast .Toastify__toast-icon,
+.Toastify__close-button > svg {
+  display: none;
+}
+
+.Toastify .Toastify__toast:after {
+  content: url("/icons/close-toast.svg");
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.Toastify .Toastify__toast--error {
+  border: 1px solid #eb5757;
+  border-radius: 8px !important;
+  background: #eb5757 !important;
+}
+
+.Toastify__toast--error::before {
+  content: url("/icons/errorToast.svg");
+  position: relative;
+  z-index: 100000;
+  left: 0px;
+}
+.Toastify .Toastify__toast--success {
+  border: 1px solid #26d96b !important;
+  border-radius: 8px !important;
+  background: #26d96b !important;
+}
+.Toastify__toast--success::before {
+  content: url("/icons/successToast.svg");
+  position: relative;
+  z-index: 100000;
+  left: 0px;
+}
+
+/*Material Ui components styling */
+.MuiCalendarPicker-root .MuiPickersDay-root {
+  border-radius: 5px !important;
+}
+.MuiCalendarPicker-root .MuiPickersDay-root.Mui-selected {
+  color: #fff;
+}
+
+.MuiTooltip-tooltip {
+  background: #334040 !important;
+  max-width: 230px !important;
+  line-height: 16px;
+  text-align: center;
+}

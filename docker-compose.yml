@@ -1,0 +1,8 @@
+version: '2.2'
+services:
+  margin-genius:
+    image: "margingeniusweb1.0"
+    ports:
+      - "3001:3001"
+    container_name: "MG_web"
+    network_mode: 'host'

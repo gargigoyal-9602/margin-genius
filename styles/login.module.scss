@@ -1,0 +1,148 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  min-height: 100vh;
+}
+.header {
+  height: 80px;
+}
+.left_side {
+  padding: 0 30px;
+  width: 70%;
+  @media (max-width: 992px) {
+    width: 60%;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+.welcome_center {
+  max-width: 500px;
+  margin: auto;
+  width: 80%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+.line {
+  padding: 10px 0 30px 0;
+  position: relative;
+  width: 100%;
+  display: block;
+  &:after {
+    height: 2px;
+    border-top: 1px solid #d2d4d4;
+    content: "";
+    position: absolute;
+    width: 100%;
+  }
+}
+.first_link {
+  text-align: center;
+  margin: 10px 0 40px 0;
+}
+.second_link {
+  text-align: center;
+  margin: 10px 0 30px 0;
+  color: #17aa78;
+  a {
+    color: #17aa78;
+  }
+}
+.green_txt {
+  color: #17aa78;
+}
+.link {
+  cursor: pointer;
+  margin-right: 20px;
+}
+.d_flex_center {
+  display: flex;
+  align-items: center;
+}
+span.red {
+  color: #e05269;
+}
+.welcome_content h1 {
+  color: #17aa78;
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  font-size: 36px;
+  line-height: 1.2;
+  @media (max-width: 1024px) {
+    font-size: 30px;
+  }
+  @media (max-width: 768px) {
+    font-size: 26px;
+  }
+}
+.welcome_content p {
+  padding-bottom: 25px;
+  line-height: 26px;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+.form {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: #d4d6d6;
+  @media (max-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.form_signup {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  background-color: #04d68f;
+  color: #fff;
+  border-radius: 6px;
+  border: 1px solid #04d68f;
+  margin-bottom: 25px;
+}
+
+.signup {
+  padding-top: 25px;
+}
+.formGroup {
+  margin-bottom: 20px;
+}
+.right_side {
+  background: #dbf1ea;
+  width: auto;
+  flex: 1 1 auto;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.right_icons {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  margin: 0 20px;
+  @media (max-width: 1439px) {
+    width: 90px;
+  }
+}
+.right_icons > span {
+  margin: 15px 0 15px 0 !important;
+}
+.right_icons:first-child > span {
+  &:first-child {
+    margin-top: -30px !important;
+  }
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.ico img {
+  margin-top: 18px;
+}
